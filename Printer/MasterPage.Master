@@ -26,11 +26,11 @@
     <div id="wrapper">
         <div id="menu">
             <ul id="navigation_first">
-                <li ><a href ="Home.aspx">Home</a></li>
-                <li><a href ="About.aspx">About</a></li> 
-                <li><a href ="ContactUs.aspx">Contact Us</a></li>
-                <li><a href ="Product.aspx">Product</a></li>
-                <li><a href ="Member.aspx">Members</a></li>
+                <li ><a href ="~/Home.aspx" runat="server">Home</a></li>
+                <li><a href ="~/About.aspx" runat="server">About</a></li> 
+                <li><a href ="~/ContactUs.aspx" runat="server">Contact Us</a></li>
+                <li><a href ="~/Product.aspx" runat="server">Product</a></li>
+                <li><a href ="~/Member.aspx"  runat="server">Members</a></li>
             </ul>
         </div>
        
