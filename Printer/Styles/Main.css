@@ -1,0 +1,161 @@
+﻿*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+
+}
+
+/*The style below will apply to the element with an
+id of "head" - title */
+#titleName {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+/*The style below will apply to the element with an
+id of "body"*/
+body {
+    background-color: #F4F6F6;
+    font-family: Arial, Melvetica,sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/*The style below will apply to the element with an
+id of "body" -wrapper */
+#wrapper{  
+    width:1000px;
+    margin:auto;
+}
+
+
+/*The style below will apply to the element with an
+id of "body" - content */
+#content {
+    width: 900px;
+    height: 500px;
+    background-color:whitesmoke;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    min-height: 400px;
+    margin-left: 33px;
+    box-sizing: border-box;
+}
+
+
+/*The style below will apply to the element with an
+id of "menu" start --------*/
+#menu {
+    background-color: rgb(10, 110,178);
+    width:100%;
+    margin: 0px 0px 10px;
+    padding: 0px;
+    height:40px;
+    color: rgb(243, 243, 243);
+    border-radius: 5px 5px 5px 5px;
+  
+}
+
+#navigation_first{
+    border-left:0px;
+    border-radius: 5px 0px 0px 5px;
+     margin-left:290px;
+
+}
+
+#navitem {
+    float: left;
+    border-right: 1px solid rgb(10, 85, 125);
+    border-left: 1px solid rgb(67, 153, 200);
+    height:40px;
+    background-color:rgb(14,79,114);
+}
+
+#menu ul li {
+    float: left;
+    display: block;
+    border-right: 1px solid rgb(10, 85, 125);
+    border-left: 1px solid rgb(67, 153, 200);
+}
+
+#menu ul li.navigation_first:hover{
+    border-radius: 5px 0px 0px 5px;
+}
+
+#menu ul li a{
+    font-size:13px;
+    font-weight: bold;
+    line-height: 40px;
+    padding:8px 20px;
+    color:rgb(255,255,255);
+    text-decoration:none;
+}
+
+#menu ul li:hover{
+    background-color:rgb(14,79,114);
+    border-right:1px solid rgb(14,89,130);
+}
+
+/*until end-----------"body" */
+
+
+
+/*The style below will apply to the element with an
+id of "footer" */
+#footer h2 {
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(10, 110,178);
+    width: 100%;
+    padding: 0px;
+    height: 30px;
+    color: rgb(243, 243, 243);
+    border-radius: 5px 5px 5px 5px;
+    margin-top:550px;
+}
+
+/*footer*/
+#image1 {
+    
+    width:100px;
+    height:300px;
+    margin-left:10px;
+}
+
+#head-h1{
+   color:black;
+   font-size:30px;
+   text-align:center;
+}
+
+#head-h4 {
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#about{
+    font-size: 20px;
+    text-align: center;
+}
+
+#location {
+       width:100px; 
+       height:100px; 
+       border:0;
+       margin-left:550px;
+       margin-top:-150px;    
+}
+
+#feedback {
+    font-size: 20px;
+    
+}
+#address1 {
+    margin-right: 500px;
+
+}

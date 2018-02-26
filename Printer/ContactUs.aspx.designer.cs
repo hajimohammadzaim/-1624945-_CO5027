@@ -11,7 +11,7 @@ namespace Printer
 {
 
 
-    public partial class About1
+    public partial class ContactUs
     {
     }
 }
