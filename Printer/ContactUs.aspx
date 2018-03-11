@@ -9,23 +9,26 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentBody" runat="server">
 
   
-<div id="feedback">  
+    <div id="feedback">  
   <h2>Feedback Form</h2>
 
-  Name:<br>
-  <input type="text" name="name" value="">
-  <br>
-  E-mail:<br>
-  <input type="text" name="Email" value="">
-  <br>
-   Contact No:<br>
-  <input type="text" name="Contact" value="">
-  <br>
-  Message:<br>
-  <input type="text" name="message" value="" style="width: 472px; height: 136px">
-  <br>
+ <div>
+   <asp:Label ID="lblSubject" runat="server" Text="Subject"></asp:Label>
+    <br />
+   <asp:TextBox ID="txtSubject" runat="server" Height="21px"></asp:TextBox>
+    <br />
 
-<input type="submit" value="Submit">
+    <asp:Label ID="lblbody" runat="server" Text="Body"></asp:Label>
+    <br />
+     <asp:TextBox ID="txtBody" runat="server" TextMode="MultiLine"></asp:TextBox>
+     <br>
+     <br />
+    <div></div>
+     <asp:Button ID="btnSendEmail" runat="server" OnClick="btnSendEmail_Click" Text="Send email" />
+     <br />
+     <br />
+      <asp:Literal ID="litResult" runat="server"></asp:Literal>
+ </div>  
 </div>
 
 <div id="address1">
@@ -36,8 +39,21 @@
         <p>Bandar Seri Begawan BB2713</p>
         <p>Negara Brunei Darussalam</p>
     </div>
-    <div id="location">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9185.132415170678!2d114.9345503558653!3d4.93397470187197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3222f5a56278e879%3A0x251de2d6ea41033a!2sTimes+Square+Shopping+Complex!5e0!3m2!1sen!2sbn!4v1519625511351"></iframe>
-    </div>
+    
 
+</asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="Mappp" runat="server">
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 4.905999, lng: 114.9142873},
+          zoom: 10
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfPuM4wV5Mlu-rwTprqRtqvqIwGVW_Hhk&callback=initMap"
+    async defer></script>
 </asp:Content>

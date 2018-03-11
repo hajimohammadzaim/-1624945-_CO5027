@@ -24,9 +24,10 @@ body {
 
 /*The style below will apply to the element with an
 id of "body" -wrapper */
-#wrapper{  
-    width:1000px;
-    margin:auto;
+#wrapper {
+
+    margin: auto;
+    position: sticky;
 }
 
 
@@ -42,7 +43,7 @@ id of "body" - content */
     margin-top: 10px;
     margin-bottom: 8px;
     min-height: 400px;
-    margin-left: 33px;
+    margin-left: 200px;
     box-sizing: border-box;
 }
 
@@ -51,28 +52,29 @@ id of "body" - content */
 id of "menu" start --------*/
 #menu {
     background-color: rgb(10, 110,178);
-    width:100%;
+    width: 100%;
     margin: 0px 0px 10px;
     padding: 0px;
-    height:40px;
+    height: 40px;
     color: rgb(243, 243, 243);
     border-radius: 5px 5px 5px 5px;
-  
+    position: fixed;
 }
 
-#navigation_first{
-    border-left:0px;
+#navigation_first {
+    border-left: 0px;
     border-radius: 5px 0px 0px 5px;
-     margin-left:290px;
-
+    margin-left: 390px;
+    
 }
 
 #navitem {
     float: left;
     border-right: 1px solid rgb(10, 85, 125);
     border-left: 1px solid rgb(67, 153, 200);
-    height:40px;
-    background-color:rgb(14,79,114);
+    height: 40px;
+    background-color: rgb(14,79,114);
+    
 }
 
 #menu ul li {
@@ -106,8 +108,8 @@ id of "menu" start --------*/
 
 /*The style below will apply to the element with an
 id of "footer" */
-#footer h2 {
-    padding: 15px;
+#footer {
+
     text-align: center;
     background-color: rgb(10, 110,178);
     width: 100%;
@@ -115,10 +117,12 @@ id of "footer" */
     height: 30px;
     color: rgb(243, 243, 243);
     border-radius: 5px 5px 5px 5px;
-    margin-top:550px;
+  
 }
 
 /*footer*/
+
+
 #image1 {
     
     width:100px;
@@ -159,3 +163,41 @@ id of "footer" */
     margin-right: 500px;
 
 }
+
+#lists{
+    margin-left:400px;
+    margin-top:30px;
+   
+}
+#home-image{
+   margin-top:-160px;
+   margin-left:80px;
+}
+
+#logo-brand{
+   height:150px;
+   width:400px;
+   margin-left:350px;
+   margin-top:-150px;
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+    height: 400px;
+    width: 429px;
+    margin-left:403px;
+    margin-bottom:100px;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;  
+    padding: 0;
+}
+
+#productprinter img {
+    width: 20px;
+    height: auto;
+}
+
