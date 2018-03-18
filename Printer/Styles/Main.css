@@ -22,28 +22,17 @@ body {
     margin-bottom: 10px;
 }
 
-/*The style below will apply to the element with an
-id of "body" -wrapper */
-#wrapper {
-
-    margin: auto;
-    position: sticky;
-}
-
 
 /*The style below will apply to the element with an
 id of "body" - content */
 #content {
-    width: 900px;
-    height: 500px;
+    width: 100%;
     background-color:whitesmoke;
     border: 1px solid rgb(224, 224, 224);
     border-radius: 5px 5px 5px 5px;
-    float: left;
+    
     margin-top: 10px;
     margin-bottom: 8px;
-    min-height: 400px;
-    margin-left: 200px;
     box-sizing: border-box;
 }
 
@@ -58,7 +47,7 @@ id of "menu" start --------*/
     height: 40px;
     color: rgb(243, 243, 243);
     border-radius: 5px 5px 5px 5px;
-    position: fixed;
+   
 }
 
 #navigation_first {
@@ -105,24 +94,6 @@ id of "menu" start --------*/
 /*until end-----------"body" */
 
 
-
-/*The style below will apply to the element with an
-id of "footer" */
-#footer {
-
-    text-align: center;
-    background-color: rgb(10, 110,178);
-    width: 100%;
-    padding: 0px;
-    height: 30px;
-    color: rgb(243, 243, 243);
-    border-radius: 5px 5px 5px 5px;
-  
-}
-
-/*footer*/
-
-
 #image1 {
     
     width:100px;
@@ -157,27 +128,26 @@ id of "footer" */
 
 #feedback {
     font-size: 20px;
-   
+    margin-left: 500px;
 }
 #address1 {
-    margin-right: 500px;
-
+    margin-left: 500px;
 }
 
 #lists{
-    margin-left:400px;
+    margin-left:500px;
     margin-top:30px;
    
 }
 #home-image{
    margin-top:-160px;
-   margin-left:80px;
+   margin-left:150px;
 }
 
 #logo-brand{
    height:150px;
    width:400px;
-   margin-left:350px;
+   margin-left:800px;
    margin-top:-150px;
 }
 
@@ -187,17 +157,25 @@ id of "footer" */
     height: 400px;
     width: 429px;
     margin-left:403px;
-    margin-bottom:100px;
-}
-/* Optional: Makes the sample page fill the window. */
-html, body {
-    height: 100%;
-    margin: 0;  
-    padding: 0;
+ 
 }
 
 #productprinter img {
     width: 20px;
     height: auto;
+}
+
+.bottom {
+    position: relative;
+    background-color: rgb(10, 110,178);
+    width: 100%;
+    height: 40px;
+    color: rgb(243, 243, 243);
+    text-align:center;
+  
+}
+
+#LogIn{
+    margin-left:550px;
 }
 

@@ -34,7 +34,7 @@
                 <li><a href ="~/About.aspx" runat="server">About</a></li> 
                 <li><a href ="~/ContactUs.aspx" runat="server">Contact Us</a></li>
                 <li><a href ="~/Product.aspx" runat="server">Product</a></li>
-                <li><a href ="~/Member.aspx"  runat="server">Members</a></li>
+                <li><a href ="~/Register.aspx"  runat="server">Members</a></li>
             </ul>
         </div>
        
@@ -51,15 +51,6 @@
     </form>
 
 
-    <asp:contentplaceholder Id="Mappp" runat="server">
-    
-    
-    </asp:contentplaceholder>
-
-    <asp:contentplaceholder Id="Footer" runat="server">
-
-    <p id="footer">Copyright@ 2018 </p>
-    </asp:contentplaceholder>
-    </div>
+    <p class="bottom">Copyright@2018</p>
     </body>
 </html>
