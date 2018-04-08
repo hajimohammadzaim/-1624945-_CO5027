@@ -28,7 +28,7 @@ Register
         <br />
         <asp:Literal ID="Literal1" runat="server"></asp:Literal>
     <br />
-    <asp:Button ID="BtnLogin1" runat="server" Text="Submit" OnClick="BtnLogin_Click"/>
+    <asp:Button ID="BtnLogin1" runat="server" Text="Submit" />
         <br />
     <br />
  </div>

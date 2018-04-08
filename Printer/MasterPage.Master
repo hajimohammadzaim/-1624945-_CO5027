@@ -34,7 +34,7 @@
                 <li><a href ="~/About.aspx" runat="server">About</a></li> 
                 <li><a href ="~/ContactUs.aspx" runat="server">Contact Us</a></li>
                 <li><a href ="~/Product.aspx" runat="server">Product</a></li>
-                <li><a href ="~/LogIn.aspx"  runat="server">Members</a></li>
+                <li><a href ="~/Admin/Uploadimage.aspx"  runat="server">Members</a></li>
             </ul>
         </div>
        
