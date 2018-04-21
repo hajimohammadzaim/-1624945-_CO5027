@@ -25,12 +25,17 @@
                 <HeaderTemplate><ul></HeaderTemplate>
 
             <ItemTemplate>
-                <li>
-                    <a href="<%#Eval("ProductID", "Product.aspx?PID={0}") %>">
-                        <%#Eval("productName") %>
-                    </a>
 
-                </li>
+                <div class="product-default">
+                    <li>
+                        <img src="/ProductImages/<%#Eval("ProductID") %>.jpg" /><br />
+                        <h1><a href="<%#Eval("ProductID", "Product.aspx?PID={0}") %>">
+                        <%#Eval("productName") %><br /></a></h1>
+                        <p>Description:</p><%#Eval("ProductDesc") %>
+                        <p>Price:</p><%#Eval("Price") %>
+                    </a>
+                    </li>
+                </div>
 
             </ItemTemplate>
 

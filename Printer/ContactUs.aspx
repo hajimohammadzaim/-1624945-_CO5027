@@ -47,23 +47,7 @@
 </div>
  <br />
  <div id="map">
-    <script>
-        var map;
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 4.93951, lng: 114.937435 },
-                zoom: 17
-            });
-
-           
-  var map=new google.maps.Map(document.getElementById("map"),mapOptions);
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-        
-    </script>
+    <script src="JavaScript.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfPuM4wV5Mlu-rwTprqRtqvqIwGVW_Hhk&callback=initMap"
     async defer></script>
 </div>

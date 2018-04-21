@@ -197,6 +197,7 @@
     <Content Include="Images\toner-brand-logos.167141529_std.gif" />
     <Content Include="Images\toshiba.png" />
     <Content Include="Images\xerox.jpg" />
+    <Content Include="JavaScript.js" />
     <Content Include="LogIn.aspx" />
     <Content Include="MasterPage.Master" />
     <Content Include="Product.aspx" />

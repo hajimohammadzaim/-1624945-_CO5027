@@ -9,7 +9,6 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentBody" runat="server">
 
 
-    <asp:Image ID="Picproduct" runat="server" Width="500px" />
 
 
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource2">
@@ -23,6 +22,12 @@
             ProductDesc:
             <asp:TextBox ID="ProductDescTextBox" runat="server" Text='<%# Bind("ProductDesc") %>' />
             <br />
+            Quantity:
+            <asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Bind("Quantity") %>' />
+            <br />
+            Price:
+            <asp:TextBox ID="PriceTextBox" runat="server" Text='<%# Bind("Price") %>' />
+            <br />
             <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
             &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </EditItemTemplate>
@@ -33,10 +38,17 @@
             ProductDesc:
             <asp:TextBox ID="ProductDescTextBox" runat="server" Text='<%# Bind("ProductDesc") %>' />
             <br />
+            Quantity:
+            <asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Bind("Quantity") %>' />
+            <br />
+            Price:
+            <asp:TextBox ID="PriceTextBox" runat="server" Text='<%# Bind("Price") %>' />
+            <br />
             <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
             &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </InsertItemTemplate>
         <ItemTemplate>
+            <img src="/ProductImages/<%#Eval("ProductID") %>.jpg" /><br />
             ProductID:
             <asp:Label ID="ProductIDLabel" runat="server" Text='<%# Eval("ProductID") %>' />
             <br />
@@ -47,11 +59,18 @@
             <asp:Label ID="ProductDescLabel" runat="server" Text='<%# Bind("ProductDesc") %>' />
             <br />
 
+            Quantity:
+            <asp:Label ID="QuantityLabel" runat="server" Text='<%# Bind("Quantity") %>' />
+            <br />
+            Price:
+            <asp:Label ID="PriceLabel" runat="server" Text='<%# Bind("Price") %>' />
+            <br />
+
         </ItemTemplate>
     </asp:FormView>
     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:db_1624945_co5027_asg ConnectionString %>" SelectCommand="SELECT * FROM [tblproduct] WHERE ([ProductID] = @ProductID)" OnSelecting="SqlDataSource2_Selecting">
         <SelectParameters>
-            <asp:QueryStringParameter Name="ProductID" QueryStringField="PID" Type="Int32" />
+            <asp:QueryStringParameter Name="ProductID" QueryStringField="PID" Type="Int32" DefaultValue="0" />
         </SelectParameters>
     </asp:SqlDataSource>
 

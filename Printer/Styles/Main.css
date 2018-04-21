@@ -204,3 +204,12 @@ id of "menu" start --------*/
     width: 200px;
     margin-left: 350px;
 }
+
+.product-default li {
+    float: left;
+    padding: 100px;
+}
+
+.product-default {
+    font-size: 16px;
+}
