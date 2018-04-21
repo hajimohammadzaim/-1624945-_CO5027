@@ -30,11 +30,11 @@
     <div id="wrapper">
         <div id="menu">
             <ul id="navigation_first">
-                <li ><a href ="~/Home.aspx" runat="server">Home</a></li>
+                <li ><a href ="~/Default.aspx" runat="server">Home</a></li>
                 <li><a href ="~/About.aspx" runat="server">About</a></li> 
                 <li><a href ="~/ContactUs.aspx" runat="server">Contact Us</a></li>
                 <li><a href ="~/Product.aspx" runat="server">Product</a></li>
-                <li><a href ="~/Admin/Uploadimage.aspx"  runat="server">Members</a></li>
+                <li><a href ="~/LogIn.aspx"  runat="server">Members</a></li>
             </ul>
         </div>
        

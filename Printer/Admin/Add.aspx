@@ -3,6 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
 
+    <p>
+        Admin - Add</p>
+
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentBody" runat="server">

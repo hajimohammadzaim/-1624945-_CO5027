@@ -1,7 +1,6 @@
 ﻿*{
 padding:0;
 margin:0;
-box-sizing:border-box;
 
 }
 
@@ -30,7 +29,6 @@ id of "body" - content */
     background-color:whitesmoke;
     border: 1px solid rgb(224, 224, 224);
     border-radius: 5px 5px 5px 5px;
-    
     margin-top: 10px;
     margin-bottom: 8px;
     box-sizing: border-box;
@@ -105,6 +103,7 @@ id of "menu" start --------*/
    color:black;
    font-size:30px;
    text-align:center;
+   text-decoration:underline;
 }
 
 #head-h4 {
@@ -113,7 +112,7 @@ id of "menu" start --------*/
 
 }
 
-#about{
+.about{
     font-size: 20px;
     text-align: center;
 }
@@ -126,9 +125,10 @@ id of "menu" start --------*/
        margin-top:-150px;    
 }
 
-#feedback {
+.feedback {
     font-size: 20px;
     margin-left: 500px;
+    position:center;
 }
 #address1 {
     margin-left: 500px;
@@ -145,10 +145,9 @@ id of "menu" start --------*/
 }
 
 #logo-brand{
-   height:150px;
-   width:400px;
-   margin-left:800px;
-   margin-top:-150px;
+   height:900px;
+   width:1380px;
+   
 }
 
 /* Always set the map height explicitly to define the size of the div
@@ -175,7 +174,33 @@ id of "menu" start --------*/
   
 }
 
-#LogIn{
-    margin-left:550px;
+
+
+.H2Product {
+    text-align:center;
+    text-decoration:underline;
 }
 
+.Login{
+    text-align:center;
+}
+
+/*for Admin Panel"*/
+
+#AddBtn {
+    height: 100px;
+    width: 300px;
+    margin-left:300px;
+    
+}
+
+#ListBtn {
+    height: 100px;
+    width: 300px;
+    margin-left: 300px;
+}
+#ExitBtn {
+    height: 100px;
+    width: 200px;
+    margin-left: 350px;
+}

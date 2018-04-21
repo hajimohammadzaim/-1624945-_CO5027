@@ -16,7 +16,8 @@ namespace Printer
 
         }
 
-        protected void BtnLogin(object sender, EventArgs e)
+       
+        protected void BtnLogin1_Click(object sender, EventArgs e)
         {
             var identityDbContext = new IdentityDbContext("IdentityConnectionString");
             var roleStore = new RoleStore<IdentityRole>(identityDbContext);
@@ -24,7 +25,7 @@ namespace Printer
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userStore);
 
-            IdentityRole adminRole = new IdentityRole("Admin");
+            IdentityRole adminRole = new IdentityRole("RegisteredUser");
             roleManager.Create(adminRole);
 
             var user = new IdentityUser()
@@ -36,7 +37,7 @@ namespace Printer
             IdentityResult result = manager.Create(user, txtPassword.Text);
             if (result.Succeeded)
             {
-                manager.AddToRole(user.Id, "Admin");
+                manager.AddToRole(user.Id, "RegisteredUser");
                 manager.Update(user);
                 Literal1.Text = "Registration Successful";
             }

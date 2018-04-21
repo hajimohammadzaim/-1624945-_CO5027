@@ -1,42 +1,45 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Printer._Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Printer.WebForm2" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
+    Home
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
+    JJK Partners & Technologies
+</asp:Content>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentBody" runat="server">
+    <h1 id="head-h1">Welcome to E-online Order Printers</h1>
+    <br />
+    <h4 id="head-h4">"We are a group of experienced IT service and support team. 
+       We set new standards in user experience & make future happen."</h4>
+    <br />
+    <br />
+   
+    
+    
+<a href="Product.aspx" ><img id="logo-brand" src="Images/toner-brand-logos.167141529_std.gif"/></a></p><a href="Product.aspx" ></a><div>    
+<h2 id="head-h4"> JJK Partners&Technologies is first provided online order for all kinds of printer and Brunei-registered company established in november 1988 at Kg Kiarong, Gadong, B.S.B., Brunei Darussalam. In 1999, we moved to Kiulap area following the expansion of IT business to form Headquarter.</h2>
+    <br />
+<h2 class="H2Product">List of Product</h2>
+    <div class="H2Product" > 
+        <asp:Repeater  ID="Repeater1" runat="server" DataSourceID="SqlDataSource1" OnItemCommand="Repeater1_ItemCommand">
+                <HeaderTemplate><ul></HeaderTemplate>
 
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+            <ItemTemplate>
+                <li>
+                    <a href="<%#Eval("ProductID", "Product.aspx?PID={0}") %>">
+                        <%#Eval("productName") %>
+                    </a>
+
+                </li>
+
+            </ItemTemplate>
+
+            <FooterTemplate></ul></FooterTemplate>
+
+        </asp:Repeater>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1624945_co5027_asg ConnectionString %>" SelectCommand="SELECT * FROM [tblproduct]">
+        </asp:SqlDataSource>
+        <br />
     </div>
-
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
-    </div>
-
+</div>
 </asp:Content>

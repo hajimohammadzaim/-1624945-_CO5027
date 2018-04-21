@@ -7,27 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Printer {
+namespace Printer.Admin {
     
     
-    public partial class WebForm2 {
+    public partial class AdminPanel {
         
         /// <summary>
-        /// Repeater1 control.
+        /// AddBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Repeater1;
+        protected global::System.Web.UI.WebControls.Button AddBtn;
         
         /// <summary>
-        /// SqlDataSource1 control.
+        /// ListBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.Button ListBtn;
+        
+        /// <summary>
+        /// ExitBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ExitBtn;
     }
 }

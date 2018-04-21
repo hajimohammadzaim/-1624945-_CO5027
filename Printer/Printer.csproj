@@ -162,6 +162,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Admin\Add.aspx" />
+    <Content Include="Admin\AdminPanel.aspx" />
     <Content Include="Admin\Edit.aspx" />
     <Content Include="Admin\List.aspx" />
     <Content Include="Admin\Uploadimage.aspx" />
@@ -169,7 +170,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -199,13 +199,13 @@
     <Content Include="Images\xerox.jpg" />
     <Content Include="LogIn.aspx" />
     <Content Include="MasterPage.Master" />
-    <Content Include="Member.aspx" />
     <Content Include="Product.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Styles\Main.css" />
     <Content Include="Styles\Styles.css" />
-    <Content Include="Home.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="Admin\Web.config" />
+    <None Include="Properties\PublishProfiles\1624945_CO5027.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -250,6 +250,13 @@
     <Compile Include="Admin\Add.aspx.designer.cs">
       <DependentUpon>Add.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AdminPanel.aspx.cs">
+      <DependentUpon>AdminPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminPanel.aspx.designer.cs">
+      <DependentUpon>AdminPanel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Edit.aspx.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -287,13 +294,6 @@
     <Compile Include="ContactUs.aspx.designer.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -310,13 +310,6 @@
     </Compile>
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Member.aspx.cs">
-      <DependentUpon>Member.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Member.aspx.designer.cs">
-      <DependentUpon>Member.aspx</DependentUpon>
     </Compile>
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
@@ -348,12 +341,12 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -9,10 +9,9 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentBody" runat="server">
 
   
- <div id="feedback">  
-  <h2>Feedback Form</h2>
-
- <div>
+ <div class="feedback">  
+  <h2 id="h4">Feedback Form</h2>
+     <br />
    <asp:Label ID="lblSubject" runat="server" Text="Subject"></asp:Label>
     <br />
    <asp:TextBox ID="txtSubject" runat="server" Height="21px"></asp:TextBox>
@@ -29,15 +28,13 @@
     <br />
      <asp:TextBox ID="txtBody" runat="server" TextMode="MultiLine"></asp:TextBox>
         <asp:RequiredFieldValidator ID="BodyValidator" runat="server" ErrorMessage="invalid Body" ControlToValidate="txtBody" ForeColor="Red"></asp:RequiredFieldValidator>
-     <br>
-    <div>
-        <br />
-     </div>
+     <br />
+    
      <asp:Button ID="btnSendEmail" runat="server" OnClick="btnSendEmail_Click" Text="Send email" />
      <br />
      <br />
       <asp:Literal ID="litResult" runat="server"></asp:Literal>
- </div>  
+ 
 </div>
 
 <div id="address1">
@@ -47,8 +44,8 @@
         <p>Kg. Jaya Setia, Berakas “A”</p>
         <p>Bandar Seri Begawan BB2713</p>
         <p>Negara Brunei Darussalam</p>
-    </div>
-    
+</div>
+ <br />
  <div id="map">
     <script>
         var map;
@@ -57,7 +54,15 @@
                 center: { lat: 4.93951, lng: 114.937435 },
                 zoom: 17
             });
-        }
+
+           
+  var map=new google.maps.Map(document.getElementById("map"),mapOptions);
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+        
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfPuM4wV5Mlu-rwTprqRtqvqIwGVW_Hhk&callback=initMap"
     async defer></script>

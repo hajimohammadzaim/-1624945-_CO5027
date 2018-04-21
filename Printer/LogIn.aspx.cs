@@ -26,8 +26,11 @@ namespace Printer
             if (user != null)
             {
                 LogUserIn(userManager, user);
+                Response.Redirect("~/Default.aspx");
+
             }
             else
+
             {
                 errText.Text = "Try again";
             }
@@ -40,6 +43,22 @@ namespace Printer
         var userIdentity = userManager.CreateIdentity(
             user, DefaultAuthenticationTypes.ApplicationCookie);
         authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
-    }
+
+            if (Request.QueryString["ReturnUrl"] != null)
+            {
+                Response.Redirect(Request.QueryString["ReturnUrl"]);
+
+
+            }
+            else
+            {
+                String userRoles = userManager.GetRoles(user.Id).FirstOrDefault();
+
+                if (userRoles.Equals("Admin"))
+                {
+                    Response.Redirect("~/Admin/AdminPanel.aspx");
+                }
+            }
+            }
     }
 }

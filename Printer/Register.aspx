@@ -11,25 +11,29 @@ Register
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentBody" runat="server">
-    <div id="LogIn">
+    <div class="Login">
     <asp:Label ID="Username" runat="server" Text="Name"></asp:Label>
-    &nbsp;<asp:TextBox ID="txtUserName" runat="server" Width="105px"></asp:TextBox>
+        <br />
+    <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
     <br />
     <br />
 
     <asp:Label ID="email" runat="server" Text="Email"></asp:Label>
-    &nbsp;<asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+     <br />
+    <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
     <br />
-        <br />
+    <br />
 
     <asp:Label ID="lblPass" runat="server" Text="Password"></asp:Label>
-        &nbsp;<asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
-        <br />
-        <br />
-        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
     <br />
-    <asp:Button ID="BtnLogin1" runat="server" Text="Submit" />
-        <br />
+    <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+     <br />
+     <br />
+    <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+    <br />
+    <br />
+    <asp:Button ID="BtnLogin1" runat="server" Text="Submit" OnClick="BtnLogin1_Click" />
+    <br />
     <br />
  </div>
 </asp:Content>

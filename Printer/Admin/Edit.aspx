@@ -2,6 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
+    <p>
+        Admin - Edit</p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentBody" runat="server">
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource2" DefaultMode="Edit">
