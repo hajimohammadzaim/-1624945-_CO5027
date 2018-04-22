@@ -1,8 +1,4 @@
-﻿*{
-padding:0;
-margin:0;
-
-}
+﻿
 
 /*The style below will apply to the element with an
 id of "head" - title */
@@ -112,6 +108,11 @@ id of "menu" start --------*/
 
 }
 
+#hh {
+    font-size: 20px;
+    text-align: center;
+}
+
 .about{
     font-size: 20px;
     text-align: center;
@@ -187,29 +188,11 @@ id of "menu" start --------*/
 
 /*for Admin Panel"*/
 
-#AddBtn {
-    height: 100px;
-    width: 300px;
-    margin-left:300px;
+#head-h {
     
+    font-size: 20px;
+    text-align: center;
 }
-
-#ListBtn {
-    height: 100px;
-    width: 300px;
-    margin-left: 300px;
-}
-#ExitBtn {
-    height: 100px;
-    width: 200px;
-    margin-left: 350px;
-}
-
-.product-default li {
-    float: left;
-    padding: 100px;
-}
-
 .product-default {
     font-size: 16px;
 }
