@@ -30,12 +30,16 @@
 
                 <div class="product-default">
                     <li>
-                        <img src="/ProductImages/<%#Eval("ProductID") %>.jpg" /><br />
+                        <asp:Image ID="Image1" runat="server" ImageUrl='<%#"/ProductImages/" + Eval("ProductID") +  ".jpg" %>' />
+                        
                         <h1><a href="<%#Eval("ProductID", "Product.aspx?PID={0}") %>">
-                        <%#Eval("productName") %><br /></a></h1>
+                       
+                         <%#Eval("productName")%><br /></a></h1>
 
-                        <p>Description:</p><%#Eval("ProductDesc") %>
-                        <%--<p>Price:</p><%#Eval("Price") %>--%>
+                        <p>Description</p><%#Eval("ProductDesc") %>
+
+                        <p>BND</p><%#Eval("Price")%>
+
                     </a>
                     </li>
                 </div>
