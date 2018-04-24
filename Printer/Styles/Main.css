@@ -195,4 +195,9 @@ id of "menu" start --------*/
 }
 .product-default {
     font-size: 16px;
+    
 }
+
+    .product-default li {
+        list-style-type: none;
+    }

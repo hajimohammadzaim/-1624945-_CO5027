@@ -20,9 +20,10 @@
 <h2 id="head-h4"> JJK Partners&Technologies is first provided online order for all kinds of printer and Brunei-registered company established in november 1988 at Kg Kiarong, Gadong, B.S.B., Brunei Darussalam. In 1999, we moved to Kiulap area following the expansion of IT business to form Headquarter.</h2>
     <br />
 <h2 class="H2Product">List of Product</h2>
-    <div class="H2Product" > 
+     
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1624945_co5027_asg ConnectionString %>" SelectCommand="SELECT * FROM [tblproduct]">
         </asp:SqlDataSource>
+
         <asp:Repeater  ID="Repeater1" runat="server" DataSourceID="SqlDataSource1" OnItemCommand="Repeater1_ItemCommand">
                 <HeaderTemplate><ul></HeaderTemplate>
 
@@ -30,17 +31,15 @@
 
                 <div class="product-default">
                     <li>
-                        <asp:Image ID="Image1" runat="server" ImageUrl='<%#"/ProductImages/" + Eval("ProductID") +  ".jpg" %>' />
+                        <img src="<%#Eval("ProductID","ProductImages/{0}.jpg")%>" />
                         
                         <h1><a href="<%#Eval("ProductID", "Product.aspx?PID={0}") %>">
                        
-                         <%#Eval("productName")%><br /></a></h1>
+                         <%#Eval("ProductName")%><br /></a></h1>
 
                         <p>Description</p><%#Eval("ProductDesc") %>
 
-                        <p>BND</p><%#Eval("Price")%>
-
-                    </a>
+                        <p>BND</p><%#Eval("Price")%></a>
                     </li>
                 </div>
 
@@ -49,7 +48,7 @@
             <FooterTemplate></ul></FooterTemplate>
 
         </asp:Repeater>
-        <br />
-    </div>
-</div>
+        
+    
+
 </asp:Content>

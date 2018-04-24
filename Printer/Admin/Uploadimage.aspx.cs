@@ -11,14 +11,14 @@ namespace Printer.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string productId = Request.QueryString["ProductID"];
+            string productId = Request.QueryString["id"];
             string filename = productId + ".jpg";
             CurrentImage.ImageUrl = "~/ProductImages/" + filename;
         }
 
         protected void UploadBtn_Click(object sender, EventArgs e)
         {
-            string productId = Request.QueryString["ProductID"];
+            string productId = Request.QueryString["id"];
             string filename = productId + ".jpg";
             string saveLocation = Server.MapPath("~/ProductImages/" + filename);
             FileUploadimage.SaveAs(saveLocation);
