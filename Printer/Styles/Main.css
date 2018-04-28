@@ -41,13 +41,14 @@ id of "menu" start --------*/
     height: 40px;
     color: rgb(243, 243, 243);
     border-radius: 5px 5px 5px 5px;
-   
+    position: sticky;
 }
 
 #navigation_first {
     border-left: 0px;
     border-radius: 5px 0px 0px 5px;
-    margin-left: 390px;
+    margin-left: 33%;
+    
     
 }
 
@@ -148,6 +149,7 @@ id of "menu" start --------*/
 #logo-brand{
    height:900px;
    width:1380px;
+   margin-left:0%;
    
 }
 
@@ -176,14 +178,18 @@ id of "menu" start --------*/
 }
 
 
-
+/*for Title - Default.aspx"*/
 .H2Product {
     text-align:center;
     text-decoration:underline;
 }
 
-.Login{
-    text-align:center;
+.Login {
+    text-align: center;
+    border: dotted;
+    height: 50%;
+    width: 50%;
+    margin-left:25%;
 }
 
 /*for Admin Panel"*/
@@ -193,11 +199,25 @@ id of "menu" start --------*/
     font-size: 20px;
     text-align: center;
 }
-.product-default {
+
+
+/*for Repeater - Default.aspx"*/
+
+.product-default{
+    list-style-type: none;
     font-size: 16px;
+    border: double;
+    overflow:auto;
+    
     
 }
 
-    .product-default li {
-        list-style-type: none;
-    }
+.lis {
+    text-align:center;
+    height: 200px;
+    border: double;
+}
+.lis img{
+    width:200px;
+    float:left;
+}

@@ -13,5 +13,20 @@ namespace Printer
         {
 
         }
+
+     
+        protected void CSS_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("http://jigsaw.w3.org/css-validator/");
+        }
+
+        protected void WCAG_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("https://achecker.ca/checker/");
+        }
+        protected void HTML_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("https://validator.w3.org/");
+        }
     }
 }

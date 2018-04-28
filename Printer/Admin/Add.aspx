@@ -3,8 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
 
-    <p>
-        Admin - Add</p>
+    <p>Admin - Add</p>
 
 </asp:Content>
 
@@ -14,55 +13,55 @@
         <EditItemTemplate>
             ProductID:
             <asp:Label ID="ProductIDLabel1" runat="server" Text='<%# Eval("ProductID") %>' />
-            <br />
+            <p></p>
             ProductName:
             <asp:TextBox ID="ProductNameTextBox" runat="server" Text='<%# Bind("ProductName") %>' />
-            <br />
+            <p></p>
             ProductDesc:
             <asp:TextBox ID="ProductDescTextBox" runat="server" Text='<%# Bind("ProductDesc") %>' />
-            <br />
+            <p></p>
             Quantity:
             <asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Bind("Quantity") %>' />
-            <br />
+            <p></p>
             Price:
             <asp:TextBox ID="PriceTextBox" runat="server" Text='<%# Bind("Price") %>' />
-            <br />
+            <p></p>
             <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
             &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </EditItemTemplate>
         <InsertItemTemplate>
             ProductName:
             <asp:TextBox ID="ProductNameTextBox" runat="server" Text='<%# Bind("ProductName") %>' />
-            <br />
+            <p></p>
             ProductDesc:
             <asp:TextBox ID="ProductDescTextBox" runat="server" Text='<%# Bind("ProductDesc") %>' />
-            <br />
+            <p></p>
             Quantity:
             <asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Bind("Quantity") %>' />
-            <br />
+            <p></p>
             Price:
             <asp:TextBox ID="PriceTextBox" runat="server" Text='<%# Bind("Price") %>' />
-            <br />
+            <p></p>
             <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
             &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </InsertItemTemplate>
         <ItemTemplate>
             ProductID:
             <asp:Label ID="ProductIDLabel" runat="server" Text='<%# Eval("ProductID") %>' />
-            <br />
+            <p></p>
             ProductName:
             <asp:Label ID="ProductNameLabel" runat="server" Text='<%# Bind("ProductName") %>' />
-            <br />
+            <p></p>
             ProductDesc:
             <asp:Label ID="ProductDescLabel" runat="server" Text='<%# Bind("ProductDesc") %>' />
-            <br />
+            <p></p>
 
             Quantity:
             <asp:Label ID="QuantityLabel" runat="server" Text='<%# Bind("Quantity") %>' />
-            <br />
+            <p></p>
             Price:
             <asp:Label ID="PriceLabel" runat="server" Text='<%# Bind("Price") %>' />
-            <br />
+            <p></p>
 
             <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
             &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />

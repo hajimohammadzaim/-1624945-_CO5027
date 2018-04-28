@@ -11,28 +11,25 @@
   
  <div class="feedback">  
   <h2 id="h4">Feedback Form</h2>
-     <br />
+     <p></p>
    <asp:Label ID="lblSubject" runat="server" Text="Subject"></asp:Label>
-    <br />
+    <p></p>
    <asp:TextBox ID="txtSubject" runat="server" Height="21px"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="SbjctValidator" runat="server" ErrorMessage="invalid Subject" ControlToValidate="txtSubject" ForeColor="Red"></asp:RequiredFieldValidator>
-     <br />
-
+        <asp:RequiredFieldValidator ID="SbjctValidator" runat="server" ErrorMessage="Please fill up the blank" ControlToValidate="txtSubject" ForeColor="Red"></asp:RequiredFieldValidator>
+     <p></p>
     <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
-     <br />
+     <p></p>
    <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="EmailValidator" runat="server" ErrorMessage="invalid Email" ControlToValidate="txtEmail" ForeColor="Red"></asp:RequiredFieldValidator>
-    <br />
-
-    <asp:Label ID="lblbody" runat="server" Text="Body"></asp:Label>
-    <br />
+    <asp:RequiredFieldValidator ID="EmailValidator" runat="server" ErrorMessage="Please fill up the blank" ControlToValidate="txtEmail" ForeColor="Red"></asp:RequiredFieldValidator>
+   <p></p>
+   <asp:Label ID="lblbody" runat="server" Text="Body"></asp:Label>
+    <p></p>
      <asp:TextBox ID="txtBody" runat="server" TextMode="MultiLine"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="BodyValidator" runat="server" ErrorMessage="invalid Body" ControlToValidate="txtBody" ForeColor="Red"></asp:RequiredFieldValidator>
-     <br />
-    
-     <asp:Button ID="btnSendEmail" runat="server" OnClick="btnSendEmail_Click" Text="Send email" />
-     <br />
-     <br />
+     <asp:RequiredFieldValidator ID="BodyValidator" runat="server" ErrorMessage="Please fill up the blank" ControlToValidate="txtBody" ForeColor="Red"></asp:RequiredFieldValidator>
+    <p></p>
+   <asp:Button ID="btnSendEmail" runat="server" OnClick="btnSendEmail_Click" Text="Send email" />
+     <p></p>
+     <p></p>
       <asp:Literal ID="litResult" runat="server"></asp:Literal>
  
 </div>
@@ -45,7 +42,7 @@
         <p>Bandar Seri Begawan BB2713</p>
         <p>Negara Brunei Darussalam</p>
 </div>
- <br />
+ <p></p>
  <div id="map">
     <script src="JavaScript.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfPuM4wV5Mlu-rwTprqRtqvqIwGVW_Hhk&callback=initMap"

@@ -5,31 +5,55 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
 
-<p>Login</p>
+<p>JJK Partners & Technologies</p>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentBody" runat="server">
-<div class="Login">
+    <h1 class="H2Product">Log In</h1> 
+    <div class="Login">
     <asp:Label ID="Username" runat="server" Text="Username"></asp:Label>
-    <br />
-    <br />
+    <p></p>
+    <p></p>
     <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
-    <br />
-    <br />
+    <p></p>
+    <p></p>
     <asp:Label ID="Label1" runat="server" Text="Password"></asp:Label>
-    <br />
-    <br />
+    <p></p>
+    <p></p>
     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-    <br />
-<br />Click this link for <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Register.aspx">Register</asp:HyperLink>
-    .<br />
-    <br />
+    <p></p>
     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
-
-
-    <br />
-    <br />
+    <p></p>
     <asp:Literal ID="errText" runat="server"></asp:Literal>
+</div>
+        
+    <h1 class="H2Product">Register</h1>
+        <div class="Login">
+            <asp:Label ID="Username0" runat="server" Text="Name"></asp:Label>
+            <p>
+            </p>
+            <asp:TextBox ID="txtUserName0" runat="server"></asp:TextBox>
+            <p>
+            </p>
+            <asp:Label ID="email" runat="server" Text="Email"></asp:Label>
+            <p>
+            </p>
+            <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+            <p>
+            </p>
+            <asp:Label ID="lblPass" runat="server" Text="Password"></asp:Label>
+            <p>
+            </p>
+            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+            <p>
+            </p>
+            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+            <p>
+            </p>
+            <asp:Button ID="BtnLogin1" runat="server" OnClick="BtnLogin1_Click" Text="Submit" />
+            <p>
+            </p>
+        </div>
 
-    </div>
+    
 </asp:Content>

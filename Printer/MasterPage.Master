@@ -13,6 +13,19 @@
 
     <link href="Styles/Main.css" rel="stylesheet" type="text/css" />
 
+    <style type="text/css">
+        .auto-style1 {
+            position: relative;
+            background-color: rgb(10, 110,178);
+            width: 100%;
+            height: 40px;
+            color: rgb(243, 243, 243);
+            text-align: center;
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+
     <div id="titleName">
     <asp:ContentPlaceHolder ID="head" runat="server">
         
@@ -33,7 +46,6 @@
                 <li ><a href ="~/Default.aspx" runat="server">Home</a></li>
                 <li><a href ="~/About.aspx" runat="server">About</a></li> 
                 <li><a href ="~/ContactUs.aspx" runat="server">Contact Us</a></li>
-                <li><a href ="~/Product.aspx" runat="server">Product</a></li>
                 <li><a href ="~/LogIn.aspx"  runat="server">Members</a></li>
             </ul>
         </div>
@@ -48,9 +60,15 @@
      
 
     </div>
+        
+
+    <div class="bottom">
+        <a href="mailto:Copyright@2018">Copyright@2018</a><br />
+            <asp:Button ID="CSS" runat="server" Text="Validate CSS" OnClick="CSS_Click" />
+            <asp:Button ID="WCAG" runat="server" Text="Validate WCAG" OnClick="WCAG_Click" />
+            <asp:Button ID="HTML" runat="server" Text="Validate HTML" OnClick="HTML_Click" />
+     
+    </div>
     </form>
-
-
-    <p class="bottom">Copyright@2018</p>
     </body>
 </html>

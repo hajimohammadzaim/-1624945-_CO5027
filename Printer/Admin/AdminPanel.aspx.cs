@@ -31,7 +31,7 @@ namespace Printer.Admin
 
         protected void Button6_Click(object sender, EventArgs e)
         {
-            
+            Response.Redirect("~/LogIn.aspx");
         }
     }
 }
