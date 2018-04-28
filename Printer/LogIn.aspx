@@ -20,7 +20,7 @@
     <asp:Label ID="Label1" runat="server" Text="Password"></asp:Label>
     <p></p>
     <p></p>
-    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+    <asp:TextBox ID="TextBox1" runat="server" TextMode="Password"></asp:TextBox>
     <p></p>
     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
     <p></p>
@@ -44,7 +44,7 @@
             <asp:Label ID="lblPass" runat="server" Text="Password"></asp:Label>
             <p>
             </p>
-            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
             <p>
             </p>
             <asp:Literal ID="Literal1" runat="server"></asp:Literal>
