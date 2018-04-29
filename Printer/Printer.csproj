@@ -179,23 +179,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\brother.jpeg" />
-    <Content Include="Images\BTgrkyoec.gif" />
-    <Content Include="Images\dell.png" />
-    <Content Include="Images\epson.jpg" />
     <Content Include="Images\hp.jpg" />
-    <Content Include="Images\HP.png" />
-    <Content Include="Images\IBM.jpg" />
-    <Content Include="Images\kyocera.jpg" />
-    <Content Include="Images\lanier.png" />
-    <Content Include="Images\lexmark.jpg" />
-    <Content Include="Images\muratec.jpg" />
-    <Content Include="Images\oce.jpg" />
-    <Content Include="Images\Panasonic.jpg" />
-    <Content Include="Images\samsung.jpg" />
-    <Content Include="Images\sharp.jpg" />
+    <Content Include="Images\Lexmark.jpg" />
     <Content Include="Images\toner-brand-logos.167141529_std.gif" />
-    <Content Include="Images\toshiba.png" />
     <Content Include="Images\xerox.jpg" />
     <Content Include="JavaScript.js" />
     <Content Include="LogIn.aspx" />

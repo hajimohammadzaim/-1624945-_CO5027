@@ -9,7 +9,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentBody" runat="server">
 
 
-<div class="displayProd">
+
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource2">
         <EditItemTemplate>
             ProductID:
@@ -47,8 +47,9 @@
             <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
             &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </InsertItemTemplate>
+        
         <ItemTemplate>
-            <img src="<%#Eval("ProductID", "ProductImages/{0}.jpg") %>" />
+            <img src="<%#Eval("ProductID", "ProductImages/{0}.jpg") %>"  alt="display product"/>
             <p></p>
             ProductID:
             <asp:Label ID="ProductIDLabel" runat="server" Text='<%# Eval("ProductID") %>' />
@@ -70,7 +71,7 @@
 
         </ItemTemplate>
     </asp:FormView>
-    </div>
+    
 
     Quantity:<asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Quantity" DataValueField="Quantity">
 </asp:DropDownList>

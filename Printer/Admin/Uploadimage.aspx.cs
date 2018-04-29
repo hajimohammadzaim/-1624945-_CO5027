@@ -30,7 +30,7 @@ namespace Printer.Admin
                 System.Drawing.Image img = System.Drawing.Image.FromStream(FileUploadimage.PostedFile.InputStream);
    
      
-                 Graphics graphicsObject;
+                Graphics graphicsObject;
                 int x, y;
 
                 int w = img.Width;
@@ -54,16 +54,12 @@ namespace Printer.Admin
                 x = 0;
                 y = bmp.Height / 2;
 
-                //System.Drawing.StringFormat drawFormat = new System.Drawing.StringFormat(StringFormatFlags.DirectionVertical); -> draws a vertical string for watermark
+                //draws a vertical string for watermark
                 System.Drawing.StringFormat drawFormat = new System.Drawing.StringFormat(StringFormatFlags.NoWrap);
 
-                //drawing string on Image
+                //input string on Image
                 graphicsObject.DrawString(watermark, new Font("Verdana", startsize, FontStyle.Bold), new SolidBrush(Color.FromArgb(135, 92, 242)), x, y, drawFormat);
-
-               
-
-
-               bmp.Save(saveLocation);
+                bmp.Save(saveLocation);
             }
 
         }
