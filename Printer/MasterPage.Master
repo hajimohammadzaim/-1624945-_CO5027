@@ -18,7 +18,7 @@
             position: relative;
             background-color: rgb(10, 110,178);
             width: 100%;
-            height: 40px;
+            height: 82px;
             color: rgb(243, 243, 243);
             text-align: center;
             left: 0px;
@@ -60,15 +60,23 @@
      
 
     </div>
+
+
         
 
     <div class="bottom">
-        <a href="mailto:Copyright@2018">Copyright@2018</a><br />
+       <p> Copyright@2018<p />
             <asp:Button ID="CSS" runat="server" Text="Validate CSS" OnClick="CSS_Click" />
             <asp:Button ID="WCAG" runat="server" Text="Validate WCAG" OnClick="WCAG_Click" />
-            <asp:Button ID="HTML" runat="server" Text="Validate HTML" OnClick="HTML_Click" />
-     
+            <asp:Button ID="HTML" runat="server" Text="Validate HTML" OnClick="HTML_Click" /><p />
+          <a href ="~/Default.aspx" runat="server">Home</a>
+          <a href ="~/About.aspx" runat="server">About</a> 
+          <a href ="~/ContactUs.aspx" runat="server">Contact Us</a>
+          <a href ="~/LogIn.aspx"  runat="server">Members</a>
     </div>
+          
+
+                
     </form>
     </body>
 </html>
