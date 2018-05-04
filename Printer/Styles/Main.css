@@ -20,7 +20,7 @@ body {
 
 /*The style below will apply to the element with an
 id of "body" - content */
-#content {
+#Content {
     width: 100%;
     background-color:whitesmoke;
     border: 1px solid rgb(224, 224, 224);
@@ -96,7 +96,7 @@ id of "menu" start --------*/
     margin-left:10px;
 }
 
-#head-h1{
+#title-h1{
    color:black;
    font-size:30px;
    text-align:center;
@@ -212,15 +212,16 @@ id of "menu" start --------*/
     
 }
 
-.lis {
-    text-align:center;
+#listProd {
+    text-align: center;
     height: 200px;
     border: double;
 }
-.lis img{
-    width:200px;
-    float:left;
-}
+
+#listProd img {
+        width: 200px;
+        float: left;
+    }
 
 .displayPro{
     margin-left:30%;

@@ -9,7 +9,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentBody" runat="server">
 
 
-<div class="displayProd">
+    <div class="displayProd">
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource2">
         <EditItemTemplate>
             ProductID:
@@ -60,19 +60,20 @@
             <asp:Label ID="ProductDescLabel" runat="server" Text='<%# Bind("ProductDesc") %>' />
             <p></p>
 
-            <!--Quantity:
+            Quantity:
             <asp:Label ID="QuantityLabel" runat="server" Text='<%# Bind("Quantity") %>' />
-            <p></p>-->
+            <p></p>
 
             Price:
             <asp:Label ID="PriceLabel" runat="server" Text='<%# Bind("Price") %>' />
             <p></p>
 
+            
         </ItemTemplate>
     </asp:FormView>
     </div>
 
-    Quantity:<asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Quantity" DataValueField="Quantity">
+    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Quantity" DataValueField="Quantity">
 </asp:DropDownList>
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1624945_co5027_asg ConnectionString %>" SelectCommand="SELECT [Quantity] FROM [tblproduct]"></asp:SqlDataSource>
     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:db_1624945_co5027_asg ConnectionString %>" SelectCommand="SELECT * FROM [tblproduct] WHERE ([ProductID] = @ProductID)" OnSelecting="SqlDataSource2_Selecting">
@@ -83,7 +84,9 @@
      
    
     <p>
-        <asp:Button ID="BtnCart" runat="server" Text="Purchase" OnClick="BtnCart_Click" />
+        <asp:Button ID="BtnCart" runat="server" Text="Purchase Now" OnClick="BtnCart_Click" />
     </p>
+    <p></p>
+    <p></p>
  
 </asp:Content>

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,9 +13,9 @@ namespace Printer
     public partial class Product : System.Web.UI.Page
     {
         
-
         protected void Page_Load(object sender, EventArgs e)
         {
+          
         }
 
         protected void SqlDataSource2_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
@@ -23,7 +25,34 @@ namespace Printer
 
         protected void BtnCart_Click(object sender, EventArgs e)
         {
+
+            SqlConnection db = new SqlConnection(@"Data Source=SQL2016.FSE.Network;Initial Catalog=db_1624945_co5027_asg;Persist Security Info=True;User ID=user_db_1624945_co5027_asg;Password=abc123");
+            int pid;
+
+            string name = "";
+            string price = "";
+
+            pid = Convert.ToInt32(Request.QueryString["PID"].ToString());
+            db.Open();
+            SqlCommand command = db.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "select * from tblproduct where ProductID=" + pid + "";
+            command.ExecuteNonQuery();
+            DataTable table = new DataTable();
+            SqlDataAdapter info = new SqlDataAdapter(command);
+            info.Fill(table);
+            foreach (DataRow rows in table.Rows)
+            {
+                name = rows["ProductName"].ToString();
+                price = rows["Price"].ToString();
+               
+            }
             
+            decimal PrinterPrice = Convert.ToDecimal(price);
+            decimal QuantityLabel = decimal.Parse(DropDownList1.SelectedValue);
+            decimal subtotal = (QuantityLabel * PrinterPrice);
+            decimal shipping = 10;
+            decimal total = subtotal + shipping;
 
             //Authenticate with paypal
             var config = ConfigManager.Instance.GetProperties();
@@ -35,18 +64,18 @@ namespace Printer
             var PrinterItem = new Item();
             PrinterItem.name = "Printer";
             PrinterItem.currency = "SGD";
-            PrinterItem.price = "1000";
+            PrinterItem.price = PrinterPrice.ToString();
             PrinterItem.sku = "PEPCO5027m15"; //sku is stock keeping unit  eg manufacturer code
-            PrinterItem.quantity = "1";
+            PrinterItem.quantity = QuantityLabel.ToString();
 
             var transctionDetails = new Details();
             transctionDetails.tax = "0";
-            transctionDetails.shipping = "0";
-            transctionDetails.subtotal = "1000.00";
+            transctionDetails.shipping = shipping.ToString();
+            transctionDetails.subtotal = subtotal.ToString("0.00");
 
             var transactionAmount = new Amount();
             transactionAmount.currency = "SGD";
-            transactionAmount.total = "1000.00";
+            transactionAmount.total = total.ToString("0.00");
             transactionAmount.details = transctionDetails;
 
 
