@@ -9,7 +9,11 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentBody" runat="server">
 
 
+<<<<<<< HEAD
     <div class="displayProd">
+=======
+
+>>>>>>> e1e6e443d512edd1c7fa6a60062432bf72520e92
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource2">
         <EditItemTemplate>
             ProductID:
@@ -47,8 +51,9 @@
             <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
             &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </InsertItemTemplate>
+        
         <ItemTemplate>
-            <img src="<%#Eval("ProductID", "ProductImages/{0}.jpg") %>" />
+            <img src="<%#Eval("ProductID", "ProductImages/{0}.jpg") %>"  alt="display product"/>
             <p></p>
             ProductID:
             <asp:Label ID="ProductIDLabel" runat="server" Text='<%# Eval("ProductID") %>' />
@@ -60,9 +65,13 @@
             <asp:Label ID="ProductDescLabel" runat="server" Text='<%# Bind("ProductDesc") %>' />
             <p></p>
 
-            Quantity:
+            <!--Quantity:
             <asp:Label ID="QuantityLabel" runat="server" Text='<%# Bind("Quantity") %>' />
+<<<<<<< HEAD
             <p></p>
+=======
+            <p></p>-->
+>>>>>>> e1e6e443d512edd1c7fa6a60062432bf72520e92
 
             Price:
             <asp:Label ID="PriceLabel" runat="server" Text='<%# Bind("Price") %>' />
@@ -71,9 +80,15 @@
             
         </ItemTemplate>
     </asp:FormView>
+<<<<<<< HEAD
     </div>
 
     <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Quantity" DataValueField="Quantity">
+=======
+    
+
+    Quantity:<asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Quantity" DataValueField="Quantity">
+>>>>>>> e1e6e443d512edd1c7fa6a60062432bf72520e92
 </asp:DropDownList>
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1624945_co5027_asg ConnectionString %>" SelectCommand="SELECT [Quantity] FROM [tblproduct]"></asp:SqlDataSource>
     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:db_1624945_co5027_asg ConnectionString %>" SelectCommand="SELECT * FROM [tblproduct] WHERE ([ProductID] = @ProductID)" OnSelecting="SqlDataSource2_Selecting">
@@ -84,9 +99,14 @@
      
    
     <p>
+<<<<<<< HEAD
         <asp:Button ID="BtnCart" runat="server" Text="Purchase Now" OnClick="BtnCart_Click" />
     </p>
     <p></p>
     <p></p>
+=======
+        <asp:Button ID="BtnCart" runat="server" Text="Add Cart" />
+    </p>
+>>>>>>> e1e6e443d512edd1c7fa6a60062432bf72520e92
  
 </asp:Content>

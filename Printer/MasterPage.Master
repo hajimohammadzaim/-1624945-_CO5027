@@ -64,6 +64,7 @@
         
 
     <div class="bottom">
+<<<<<<< HEAD
        <p> Copyright@2018</p>
             <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2F1624945.win.studentwebserver.co.uk%2FCO5027%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Validate CSS</a> |
             <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2F1624945.win.studentwebserver.co.uk%2FCO5027%2F&checkerrorpages=yes&showsource=yes&showoutline=yes#l35c6">Validate HTML</a> |
@@ -73,6 +74,16 @@
             <a href ="~/About.aspx" runat="server">About</a> |
             <a href ="~/ContactUs.aspx" runat="server">Contact Us</a>|
             <a href ="~/LogIn.aspx"  runat="server">Members</a>|
+=======
+       <p> Copyright@2018<p />
+            <asp:Button ID="CSS" runat="server" Text="Validate CSS" OnClick="CSS_Click" />
+            <asp:Button ID="WCAG" runat="server" Text="Validate WCAG" OnClick="WCAG_Click" />
+            <asp:Button ID="HTML" runat="server" Text="Validate HTML" OnClick="HTML_Click" /><p />
+          <a href ="~/Default.aspx" runat="server">Home</a>
+          <a href ="~/About.aspx" runat="server">About</a> 
+          <a href ="~/ContactUs.aspx" runat="server">Contact Us</a>
+          <a href ="~/LogIn.aspx"  runat="server">Members</a>
+>>>>>>> e1e6e443d512edd1c7fa6a60062432bf72520e92
     </div>
           
 

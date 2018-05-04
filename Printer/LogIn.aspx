@@ -44,7 +44,7 @@
             <asp:Label ID="lblPass" runat="server" Text="Password"></asp:Label>
             <p>
             </p>
-            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
             <p>
             </p>
             <asp:Literal ID="Literal1" runat="server"></asp:Literal>
